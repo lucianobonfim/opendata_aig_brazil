@@ -1,28 +1,24 @@
 # Opendata AIG Brazil
 
-## About
+## Sobre o Projeto
 
 ![Modelo de Dados](/reference/data_model.png)
 
 **Download dos Dados**
 
-[OCORRÊNCIAS AERONÁUTICAS](/data/oco.csv "Tabela de Ocorrências - oco.csv")
-
-[AERONAVES ENVOLVIDAS](/data/anv.csv "Tabela de Aeronaves Envolvidas - anv.csv")
-
-[FATORES CONTRIBUINTES](/data/ftc.csv "Tabela de Fatores Contribuintes - ftc.csv")
-
-[RECOMENDAÇÕES DE SEGURANÇA](/data/rec.csv "Tabela de Recomendações de Segurança - rec.csv")
+1. [OCORRÊNCIAS AERONÁUTICAS](/data/oco.csv "Tabela de Ocorrências - oco.csv")
+2. [AERONAVES ENVOLVIDAS](/data/anv.csv "Tabela de Aeronaves Envolvidas - anv.csv")
+3. [FATORES CONTRIBUINTES](/data/ftc.csv "Tabela de Fatores Contribuintes - ftc.csv")
+4. [RECOMENDAÇÕES DE SEGURANÇA](/data/rec.csv "Tabela de Recomendações de Segurança - rec.csv")
 
 **Notas Técnicas**
 
 1. Os textos dentro das colunas estão denotados por aspas duplas ("").
-
 2. As colunas das tabelas estão separadas por til (~).
-
 3. As tabelas contém cabeçalhos que identificam suas colunas.
+4. Em cada tabela existe uma coluna contendo a informação sobre a data de extração dos dados.
 
-## More Information
+## Outras Informações "For Dummies"
 
 Os relatórios finais podem ser consultados no [site do CENIPA - Relatórios](http://www.cenipa.aer.mil.br/cenipa/paginas/relatorios/relatorios-finais "CENIPA").
 
@@ -30,7 +26,7 @@ As recomendações de segurança podem ser consultadas no [site do CENIPA - Reco
 
 Artigos científicos sobre o tema podem ser encontrados / publicados na [Revista Conexão SIPAER](http://conexaosipaer.cenipa.gov.br/index.php/sipaer "Conexão SIPAER").
 
-## Other Resources
+## Outros Recursos
 
 **Outras bases de dados para consultas:**
 
@@ -44,13 +40,9 @@ Artigos científicos sobre o tema podem ser encontrados / publicados na [Revista
 
 **Dicas para melhor aproveitamento dos recursos**
 
-1. Antes de fazer o download dos dados, veja o **modelo de dados** e o **dicionário de dados**. Estes dois recursos irão guiá-lo(a) para um adequado entendimento sobre os relacionamentos entre os três conjuntos de dados disponíveis (ocorrencia, aeronave e fator_contribuinte).
-
-2. Para se aprofundar no tema, visite o site do CENIPA e confira as [LEGISLAÇÕES](http://www.cenipa.aer.mil.br/cenipa/index.php/legislacao) que norteiam a investigação e prevenção de acidentes aeronáuticos no Brasil.
-
+1. Antes de fazer o download dos dados, leia com calma todo o **texto desta página**. Este recurso irá guiá-lo(a) para um adequado entendimento sobre os relacionamentos entre os conjuntos de dados disponíveis (ocorrencia, aeronave envolvida, fator_contribuinte e recomendações de segurança).
+2. Para aprofundar-se no tema, visite o site do CENIPA e confira as [LEGISLAÇÕES](http://www.cenipa.aer.mil.br/cenipa/index.php/legislacao) que norteiam a investigação e prevenção de acidentes aeronáuticos no Brasil.
 3. Conheça o [Manual de Investigação do SIPAER](http://www.cenipa.aer.mil.br/cenipa/index.php/legislacao/category/7-mca-manual-do-comando-da-aeronautica?download=23%3Amca-3-6). Nos anexos deste documento você encontrará uma **tabela de domínios** (taxonomia) para algumas das variáveis disponíveis nos conjuntos de dados.
-
-4. Devido ao dinamismo dos trabalhos de investigação e preocupação do CENIPA com a agilidade na disponibilização dos dados, os conjuntos de dados sempre sofrerão modificações. Portanto, sempre que possível, utilize a "data de extração" dos conjuntos de dados para justificar os seus estudos e análises.
-
+4. Devido ao **dinamismo dos trabalhos de investigação** e preocupação do CENIPA com a **agilidade na disponibilização dos dados**, os conjuntos de dados sestarão sujeitos a modificações sempre que forem atualizados. Portanto, sempre que possível, utilize a "data de extração" dos conjuntos de dados para justificar/refrenciar os seus estudos e análises.
 5. Saiba como trabalhar com dados no formato CSV. [Clique aqui para aprender](http://www.portaltransparencia.gov.br/faleConosco/perguntas-tema-download-dados.asp)
 
