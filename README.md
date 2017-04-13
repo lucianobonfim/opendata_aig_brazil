@@ -23,7 +23,7 @@
 1. Os relatórios finais podem ser consultados no [site do CENIPA - Relatórios](http://www.cenipa.aer.mil.br/cenipa/paginas/relatorios/relatorios-finais "CENIPA").
 2. As recomendações de segurança podem ser consultadas no [site do CENIPA - Recomendações](http://www.cenipa.aer.mil.br/cenipa/paginas/relatorios/recomendacoes "CENIPA").
 3. Artigos científicos sobre o tema podem ser encontrados / publicados na [Revista Conexão SIPAER](http://conexaosipaer.cenipa.gov.br/index.php/sipaer "Conexão SIPAER").
-4. Se você insiste em trabalhar com dados no padrão .csv, mas não entende bolhufas sobre relacionamento de tabelas, sugiro que faça download e utilize o arquivo [TUDO RESUMIDO EM 1 TABELA](/data/all.csv "Tabela Resumida - all.csv"). Esta tabela não possui o mesmo nível granular das outras 4, porém pode te ajudar!
+4. Se você insiste em trabalhar com dados no padrão .csv, mas não entende bolhufas sobre relacionamento de tabelas, não tenha vergonha de ser dummie. Sugiro que faça download e utilize o arquivo [Tudo resumido em 1 única tabela](/data/all.csv "Tabela Resumida - all.csv"). Esta tabela não possui o mesmo nível granular das outras 4, porém pode te ajudar!
 
 ## Outros Recursos
 
