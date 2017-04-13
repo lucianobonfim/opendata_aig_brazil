@@ -42,7 +42,7 @@
 1. Antes de fazer o download dos dados, leia com calma todo o **texto desta página**. Este recurso irá guiá-lo(a) para um adequado entendimento sobre os relacionamentos entre os conjuntos de dados disponíveis (ocorrencia, aeronave envolvida, fator_contribuinte e recomendações de segurança).
 2. Para aprofundar-se no tema, visite o site do CENIPA e confira as [LEGISLAÇÕES](http://www.cenipa.aer.mil.br/cenipa/index.php/legislacao) que norteiam a investigação e prevenção de acidentes aeronáuticos no Brasil.
 3. Conheça o [Manual de Investigação do SIPAER](http://www.cenipa.aer.mil.br/cenipa/index.php/legislacao/category/7-mca-manual-do-comando-da-aeronautica?download=23%3Amca-3-6). Nos anexos deste documento você encontrará uma **tabela de domínios** (taxonomia) para algumas das variáveis disponíveis nos conjuntos de dados.
-4. Devido ao **dinamismo dos trabalhos de investigação** e preocupação do CENIPA com a **agilidade na disponibilização dos dados**, os conjuntos de dados sestarão sujeitos a modificações sempre que forem atualizados. Portanto, sempre que possível, utilize a "data de extração" dos conjuntos de dados para justificar/refrenciar os seus estudos e análises.
+4. Devido ao **dinamismo dos trabalhos de investigação** e preocupação do CENIPA com a **agilidade na disponibilização dos dados**, os conjuntos de dados estarão sujeitos a modificações sempre que forem atualizados. Portanto, sempre que possível, utilize a "data de extração" dos conjuntos de dados para justificar/referenciar os seus estudos e análises.
 5. Saiba como trabalhar com dados no formato CSV. [Clique aqui para aprender](http://www.portaltransparencia.gov.br/faleConosco/perguntas-tema-download-dados.asp)
 
 ## Dúvidas
