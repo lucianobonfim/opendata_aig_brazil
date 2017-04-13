@@ -1,11 +1,10 @@
 # Opendata AIG Brazil
 
-## Sobre
-A base de dados de ocorrências aeronáuticas é gerenciada pelo Centro de Investigação e Prevenção de Acidentes aeronáuticos (CENIPA). Constam nesta base de dados todos os acidentes e incidentes graves notificados ao CENIPA nos últimos 10 anos e que ocorreram em solo brasileiro.
+## About
 
-Dentre as informações disponíveis estão os dados sobre as aeronaves envolvidas, fatalidades, localidade, data / horário e classificação / tipificação das ocorrências. São resguardados os dados pessoais de pessoas físicas / jurídicas envolvidas.
+![Modelo de Dados](/reference/data_model.png)
 
-Essa base de dados é composta por informações preliminares e consolidadas. Dados exclusivamente consolidados podem ser obtidos após o encerramento dos trabalhos de investigação através dos relatórios finais publicados e disponíveis no site do CENIPA.
+## More Information
 
 Os relatórios finais podem ser consultados no [site do CENIPA - Relatórios](http://www.cenipa.aer.mil.br/cenipa/paginas/relatorios/relatorios-finais "CENIPA").
 
