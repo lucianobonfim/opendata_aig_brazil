@@ -4,15 +4,33 @@
 
 ![Modelo de Dados](/reference/data_model.png)
 
+**Download dos Dados**
+
+[OCORRÊNCIAS AERONÁUTICAS](/data/oco.csv "Tabela de Ocorrências - oco.csv")
+
+[AERONAVES ENVOLVIDAS](/data/anv.csv "Tabela de Aeronaves Envolvidas - anv.csv")
+
+[FATORES CONTRIBUINTES](/data/ftc.csv "Tabela de Fatores Contribuintes - ftc.csv")
+
+[RECOMENDAÇÕES DE SEGURANÇA](/data/rec.csv "Tabela de Recomendações de Segurança - rec.csv")
+
+**Notas Técnicas**
+
+1. Os textos dentro das colunas estão denotados por aspas duplas ("").
+
+2. As colunas das tabelas estão separadas por til (~).
+
+3. As tabelas contém cabeçalhos que identificam suas colunas.
+
 ## More Information
 
 Os relatórios finais podem ser consultados no [site do CENIPA - Relatórios](http://www.cenipa.aer.mil.br/cenipa/paginas/relatorios/relatorios-finais "CENIPA").
 
 As recomendações de segurança podem ser consultadas no [site do CENIPA - Recomendações](http://www.cenipa.aer.mil.br/cenipa/paginas/relatorios/recomendacoes "CENIPA").
 
-Artigos científicos sobre o tema podem ser encontrados / publicados na [Revista Conexão SIPAER](http://inseer.ibict.br/sipaer/index.php/sipaer/issue/current/ "Conexão SIPAER").
+Artigos científicos sobre o tema podem ser encontrados / publicados na [Revista Conexão SIPAER](http://conexaosipaer.cenipa.gov.br/index.php/sipaer "Conexão SIPAER").
 
-## Dicas
+## Other Resources
 
 **Outras bases de dados para consultas:**
 
