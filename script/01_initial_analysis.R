@@ -4,6 +4,7 @@
 library(readr)
 oco <- read_delim("data/all.csv", 
                   "~", escape_double = FALSE, trim_ws = TRUE)
+<<<<<<< HEAD
 names(oco)
 attach(oco)
 
@@ -17,3 +18,7 @@ library(tidyr)
 
 #Total de Acidentes
 classificacao <- table(oco$ocorrencia_classificacao)
+=======
+view(oco)
+
+>>>>>>> 74d4b366726a1b5eb9cfd6ec3446f89b92bc5a3f
