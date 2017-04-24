@@ -7,7 +7,7 @@ oco <- read_delim("data/all.csv",
 names(oco)
 attach(oco)
 
-#Total de Acidentes
+#Carregando Pacotes
 library(ggplot2)
 library(magrittr)
 library(dplyr)
@@ -15,3 +15,5 @@ library(forcats)
 library(readr)
 library(tidyr)
 
+#Total de Acidentes
+classificacao <- table(oco$ocorrencia_classificacao)
