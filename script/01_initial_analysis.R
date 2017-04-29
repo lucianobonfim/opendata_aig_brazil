@@ -4,7 +4,7 @@
 library(readr)
 oco <- read_delim("data/all.csv", 
                   "~", escape_double = FALSE, trim_ws = TRUE)
-<<<<<<< HEAD
+
 names(oco)
 attach(oco)
 
@@ -17,8 +17,15 @@ library(readr)
 library(tidyr)
 
 #Total de Acidentes
-classificacao <- table(oco$ocorrencia_classificacao)
-=======
-view(oco)
+ggplot(oco) + 
+  geom_bar(data = oco, mapping = aes(oco$ocorrencia_classificacao)) +
+  xlab("Classificação") +
+  ylab("Total")
 
->>>>>>> 74d4b366726a1b5eb9cfd6ec3446f89b92bc5a3f
+#Total por Tipo
+oco %>%
+  ggplot() + 
+  geom_bar(data=oco, mapping = aes(oco$aeronave_tipo_motor)) +
+  xlab('Tipo do Motor') +
+  ylab('Total')
+
