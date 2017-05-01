@@ -1,0 +1,107 @@
+---
+title: "Introdução ao Pacote Tidyr"
+author: "Traduzido por: Cleibson Almeida"
+font: "https://blog.rstudio.org/2014/07/22/introducing-tidyr/"
+date: "1 de maio de 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## O que é?
+
+Tidyr é um pacote para R que torna mais fácil "arrumar" os seus dados. Dados ordenados são mais fáceis de se  trabalhar: com tidyr é fácil transformar dados (com dplyr), visualizar (com ggplot2 ou ggvis) e modelar (com centenas R de pacotes de modelagem). As duas propriedades mais importantes de dados ordenados são:
+
+* Cada coluna é uma variável
+* Cada linha é uma observação
+
+Organizando seus dados desta forma será mais fácil trabalhar. Esta facilidade acontece porque você tem uma maneira consistente para se referir as variáveis (como nomes de colunas) e as observações (como índices de linha). Quando você usa dados ordenados e ferramentas que arrumam dados (**tidy data**), você gasta menos tempo se preocupando sobre como alimentar a saída de uma função para a entrada de outra e mais tempo respondendo às suas perguntas sobre os dados. Afinal, queremos mesmo é analisar os dados.
+
+Para arrumar dados bagunçados, primeiro você identifica as variáveis em seu conjunto de dados e, em seguida, utiliza as ferramentas fornecidas pelo **tidyr** para transformá-las em colunas. Tidyr fornece três funções principais para arrumar seus dados bagunçados: **gather()**, **separate()** e **spread()**.
+
+## gather()
+
+A função **gather()** pega várias colunas e as reúne em pares de valor-chave: ele torna os dados "amplos" mais longos. Outros nomes para reunir incluem derreter (reshape2), pivô (planilhas) e fold (bancos de dados). Aqui está um exemplo de como você pode usar gather () em um conjunto de dados feito. Neste experimento nós demos a três pessoas duas drogas diferentes e gravamos sua freqüência cardíaca:
+
+```{r tidyr}
+library(tidyr) #carrega o pacote tidyr
+library(dplyr) #carrega o pacote dplyr
+
+#será criado um dataframe com o nome das três pessoas e as duas drogas
+messy <- data.frame(
+  nome = c("Wilbur", "Petunia", "Gregory"),
+  a = c(67, 80, 64),
+  b = c(56, 90, 50)
+)
+
+#exibindo o dataframe criado
+messy
+
+#verificando se realmente é um dataframe
+typeof(messy)
+```
+
+Perceba então que temos três variáveis (nome, droga e frequência cardíaca), mas apenas o nome está atualmente em uma coluna. Os itens a e b referem-se aos dois tipos de drogas, enquanto os valores em linhas para a e b referem-se a frequencia cardíaca. Como droga e frequencia cardíaca são variáveis deste estudo, é mais interessante organizar os dados colocando as variáveis em colunas. Assim usamos **gather()** para reunir as colunas a e b em pares de chave-valor de droga e frequência cardíaca:
+
+```{r gather}
+messy %>%
+  gather(droga, freq_card, a:b)
+```
+
+## separate()
+
+As vezes, duas variáveis estão agrupadas em uma única coluna. A função **separate** permite que você extraia elas a parte (extract() funciona de forma semelhante, mas usa expressões **regex** no lugar de separação de camadas ou posição). Veja o exemplo a seguir.
+
+Nós temos algumas medidas de quanto tempo as pessoas ficam no telefone, medido em dois lugares (casa e trabalho), e medido duas vezes. Cada pessoa foi aleatoriamente designada para tratamento e controle, vejamos.
+
+```{r separate}
+#define um padrão para amostragem aleatória
+set.seed(10)
+
+#cria um dataframe conforme exemplo apresentado
+messy <- data.frame(
+  id = 1:4,
+  trt = sample(rep(c('control', 'treatment'), each = 2)),
+  work.T1 = runif(4),
+  home.T1 = runif(4),
+  work.T2 = runif(4),
+  home.T2 = runif(4)
+)
+
+#exibe o dataframe
+messy
+```
+
+Sinceramente, que bagunça!
+
+Para arrumar esses dados, primeiro usamos **gather()** para transformar as colunas *work.T1*, *home.T1*, *work.T2* e *home.T2* em um par chave-valor de chave e tempo. (Apenas as primeiras oito linhas são mostradas para economizar espaço.)
+
+```{r messy tidy}
+#define que messy será tidier, aplicar gather para organizar dados e exibe as primeiras 8 linhas
+tidier <- messy %>%
+  gather(key, time, -id, -trt)
+tidier %>% head(8)
+```
+
+Melhorou um pouco, mas ainda está desorganizado.
+
+Então, vamos usar a função **separate()** para dividir a chave da localidade e do tempo, usando uma **regex** (expressão regular) para descrever o caracter que separa isso.
+
+```{r messy separate}
+tidy <- tidier %>%
+  separate(key, into = c("location", "time"), sep = "\\.") 
+tidy %>% head(8)
+```
+
+## spread()
+
+A última ferramenta, **spread()**, toma duas colunas (um par chave-valor) e as distribui em várias colunas, tornando os dados "longos" mais largos. Spread é conhecido por outros nomes em outros lugares: é lançado em *reshape2*, *unpivot* em planilhas e *desdobrar* em bancos de dados. A função **spread()** é usada quando você tem variáveis que formam linhas em vez de colunas. 
+
+Você precisa da **spread()** com menos frequência do que **gather()** ou **separate()** para aprender mais, confira a documentação e as demonstrações <https://blog.rstudio.org/2014/07/22/introducing-tidyr/>.
+
+Assim como o *reshape2* faz menos que o *reshape*, *tidyr* faz menos que o *reshape2*.Eele foi desenvolvido apenas para arrumar dados e não para uma remodelação completa. Em particular, as funções existentes só servem para quadros de dados, e o *tidyr* nunca grega. Isso torna cada função *tidyr* mais simples: cada função faz bem aquilo que foi proposto. Para operações mais complicadas você pode utilizar de forma encadeada as funções *tidyr* e *dplyr* simples com o pipe %>%.
+
+Você pode aprender mais sobre o principios **tidy** no artigo **tidy data paper** <http://vita.had.co.nz/papers/tidy-data.html>. Para conhecer mais exemplos com **tidyr**, leia a vinheta, `vignette("tidy-data")`, ou confira a demonstração, `demo(package="tidyr")`. Alternativamente, também há um bom material para consulta no [stackoverflow](http://stackoverflow.com/search?tab=votes&q=%5br%5d%20tidyr). Para companhar o desenvolvimento do pacote, visite o repositório oficial no [github](https://github.com/tidyverse/tidyr).
+
