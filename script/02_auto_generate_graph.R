@@ -59,6 +59,7 @@ dev.off()
 ocorrencia_mes = substring(ocorrencia_dia, 6, 7)
 ocorrencia_ano = substring(ocorrencia_dia, 1, 4)
 temp_class = unique(ocorrencia_classificacao)
+temp_ano = unique(ocorrencia_ano)
 table(subset(ocorrencia_mes, subset = ocorrencia_classificacao == 'ACIDENTE'))
 table(subset(ocorrencia_mes, subset = ocorrencia_classificacao == 'ACIDENTE' & ocorrencia_ano == '2006'))
 sum(table(subset(ocorrencia_mes, subset = ocorrencia_classificacao == 'ACIDENTE' & ocorrencia_ano == '2006')))
@@ -82,6 +83,23 @@ for(i in temp_class){
   )
   mtext(dia_compilacao, side=1, line=4, cex=1)
   dev.off()
+  for(j in temp_ano){
+    nomearquivo = paste("images/por_mes_", tolower(i), "_ano_", j, ".jpg", sep="")
+    bmp(nomearquivo,width=graficolargura1,height=graficoaltura1)
+    barplot(table(subset(ocorrencia_mes, subset = ocorrencia_classificacao == i & ocorrencia_ano == j)),
+            main = paste("Total de ", toTitleCase(tolower(i)), "s", " por Mês no Ano de ", j, sep=""), #título do gráfico
+            col = rep(rainbow(1), length(table(subset(ocorrencia_mes, subset = ocorrencia_classificacao == i)))), #cores das barras
+            ylab = paste("Total de ", toTitleCase(tolower(i)), "s", sep=""), #label do eixo y
+            xlab = "Mês", #label do eixo x
+            cex.names = 0.8, #tamanho do texto dos eixos
+            axis.lty=1, #define padrão de linha do eixo x
+            las=1, #rotaciona labels eixo x
+            width=0.3, #largura das barras
+            space=0.5 #espaço entre as barras
+    )
+    mtext(dia_compilacao, side=1, line=4, cex=1)
+    dev.off() 
+  }
   }
 
 
