@@ -21,12 +21,13 @@
 
 ## Outras Informações "For Dummies"
 
-1. Os relatórios finais podem ser consultados no [site do CENIPA - Relatórios](http://www.cenipa.aer.mil.br/cenipa/paginas/relatorios/relatorios-finais "CENIPA").
-2. As recomendações de segurança podem ser consultadas no [site do CENIPA - Recomendações](http://www.cenipa.aer.mil.br/cenipa/paginas/relatorios/recomendacoes "CENIPA").
-3. Artigos científicos sobre o tema podem ser encontrados / publicados na [Revista Conexão SIPAER](http://conexaosipaer.cenipa.gov.br/index.php/sipaer "Conexão SIPAER").
-4. Se você insiste em trabalhar com dados abertos no padrão .csv, mas não entende bolhufas sobre relacionamento de tabelas, não tenha vergonha de ser dummie. Sugiro que faça download e utilize o arquivo [Tudo resumido em 1 única tabela](/data/all.csv "Tabela Resumida - all.csv"). Esta tabela não possui o mesmo nível granular das outras 4, porém pode te ajudar!
+1. Para uma visualização interativa dos dados visite o [Painel SIPAER](http://painelsipaer.cenipa.aer.mil.br "PAINEL SIPAER").
+2. Os relatórios finais podem ser consultados no [site do CENIPA - Relatórios](http://www.cenipa.aer.mil.br/cenipa/paginas/relatorios/relatorios-finais "RELATÓRIOS").
+3. As recomendações de segurança podem ser consultadas no [site do CENIPA - Recomendações](http://www.cenipa.aer.mil.br/cenipa/paginas/relatorios/recomendacoes "RECOMENDAÇES DE SEGURANÇA").
+4. Artigos científicos sobre o tema podem ser encontrados / publicados na [Revista Conexão SIPAER](http://conexaosipaer.cenipa.gov.br/index.php/sipaer "Conexão SIPAER").
+5. Se você insiste em trabalhar com dados abertos no padrão .csv, mas não entende bolhufas sobre relacionamento de tabelas, não tenha vergonha de ser dummie. Sugiro que faça download e utilize o arquivo [Tudo resumido em 1 única tabela](/data/all.csv "Tabela Resumida - all.csv"). Esta tabela não possui o mesmo nível granular das outras 4, porém pode te ajudar!
 
-## Outros Recursos
+## Outros Recursos "Bases de Dados"
 
 **Outras bases de dados para consultas:**
 
