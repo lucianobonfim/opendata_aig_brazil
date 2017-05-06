@@ -48,4 +48,4 @@
 
 ## Dúvidas
 
-Se persistirem dúvidas, por gentileza me enviem uma Issue (relatar problema). [Clique aqui para relatar um Problema](https://github.com/nosbielcs/opendata_aig_brazil/issues)
+Se persistirem dúvidas, por gentileza me reporte. [Clique aqui para relatar um Problema](https://github.com/nosbielcs/opendata_aig_brazil/issues)
