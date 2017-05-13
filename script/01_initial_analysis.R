@@ -29,3 +29,4 @@ oco %>%
   xlab('Tipo do Motor') +
   ylab('Total')
 
+#Total por Localidade
