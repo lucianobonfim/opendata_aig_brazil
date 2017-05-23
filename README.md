@@ -31,8 +31,8 @@
 
 **Outras bases de dados para consultas:**
 
-1. [NTSB](http://www.ntsb.gov/_layouts/ntsb.aviation/index.aspx "Base de dados do NTSB")
-2. [BEA](https://www.bea.aero/no_cache/les-enquetes/les-evenements-notifies/ "Base de dados do BEA")
+1. [NTSB](http://www.ntsb.gov/_layouts/ntsb.aviation/index.aspx "Base de dados do NTSB - Estados Unidos")
+2. [BEA](https://www.bea.aero/no_cache/les-enquetes/les-evenements-notifies/ "Base de dados do BEA - França")
 3. [RISCO DA FAUNA](http://www.cenipa.aer.mil.br/cenipa/sigra/pesquisa_dadosExt "Reportes de eventos de Risco da Fauna no Brasil")
 4. [RAIO LASER](http://www.cenipa.aer.mil.br/cenipa/raio_laser/pesquisa "Reportes de eventos de Raio Laser na Aviação Brasileira")
 5. [RISCO BALOEIRO](http://www.cenipa.aer.mil.br/cenipa/baloeiro/pesquisa "Reportes de eventos com soltura de Balões que afetam a Aviação Brasileira")
