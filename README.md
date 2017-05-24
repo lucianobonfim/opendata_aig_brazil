@@ -21,7 +21,7 @@
 
 ## Outras Informações "For Dummies"
 
-1. Para uma visualização interativa dos dados visite o [Painel SIPAER](http://painelsipaer.cenipa.aer.mil.br "PAINEL SIPAER").
+1. Para uma visualização interativa / dinâmica dos dados visite o [Painel SIPAER](http://painelsipaer.cenipa.aer.mil.br "PAINEL SIPAER").
 2. Os relatórios finais podem ser consultados no [site do CENIPA - Relatórios](http://www.cenipa.aer.mil.br/cenipa/paginas/relatorios/relatorios-finais "RELATÓRIOS").
 3. As recomendações de segurança podem ser consultadas no [site do CENIPA - Recomendações](http://www.cenipa.aer.mil.br/cenipa/paginas/relatorios/recomendacoes "RECOMENDAÇES DE SEGURANÇA").
 4. Artigos científicos sobre o tema podem ser encontrados / publicados na [Revista Conexão SIPAER](http://conexaosipaer.cenipa.gov.br/index.php/sipaer "Conexão SIPAER").
