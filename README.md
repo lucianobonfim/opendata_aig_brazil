@@ -15,7 +15,7 @@
 
 1. As informações dentro das colunas estão marcados com aspas duplas ("").
 2. As colunas das tabelas estão separadas por til (~).
-3. As tabelas contém cabeçalhos que identificam suas colunas.
+3. As tabelas contém cabeçalhos que identificam as suas colunas.
 4. Em cada tabela existe uma coluna contendo a informação sobre a data de extração dos dados.
 5. O repositório oferece ao todo 53 variáveis / features. Chaves primárias e informações sobre data da extração foram descartadas deste total.
 
