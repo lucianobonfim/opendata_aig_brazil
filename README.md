@@ -13,7 +13,7 @@
 
 **Notas Técnicas**
 
-1. Os dados estão distribuídos em colunas e demarcados com aspas duplas ("").
+1. Os dados estão distribuídos em colunas e demarcados com 'aspas duplas' ("").
 2. As colunas das tabelas estão separadas por til (~).
 3. As tabelas contém cabeçalhos que identificam as suas colunas.
 4. Em cada tabela existe uma coluna contendo a informação sobre a data de extração dos dados.
