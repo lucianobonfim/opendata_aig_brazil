@@ -1,6 +1,6 @@
 # Opendata AIG Brazil
 
-## Sobre o Projeto de Dados Abertos
+## Sobre o Projeto
 
 ![Modelo de Dados](/reference/data_model.png)
 
