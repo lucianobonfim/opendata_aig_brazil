@@ -11,7 +11,7 @@
 3. [FATORES CONTRIBUINTES](/data/ftc.csv "Tabela de Fatores Contribuintes - ftc.csv")
 4. [RECOMENDAÇÕES DE SEGURANÇA](/data/rec.csv "Tabela de Recomendações de Segurança - rec.csv")
 
-**Notas Técnicas**
+**Notas Técnicas - Padronização dos Dados**
 
 1. Os dados estão distribuídos em colunas e demarcados com 'aspas duplas' ("").
 2. As colunas das tabelas estão separadas por til (~).
